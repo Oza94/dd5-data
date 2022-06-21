@@ -1,0 +1,590 @@
+[
+  {
+    "id": "club",
+    "name": {
+      "en": "Club"
+    },
+    "price": 0.1,
+    "damage": {
+      "formula": "1d4",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "dagger",
+    "name": {
+      "en": "Dagger"
+    },
+    "price": 2,
+    "damage": {
+      "formula": "1d4",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 0.5,
+      "lb": 1
+    },
+    "source": "srd"
+  },
+  {
+    "id": "greatclub",
+    "name": {
+      "en": "Greatclub"
+    },
+    "price": 0.2,
+    "damage": {
+      "formula": "1d8",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 5,
+      "lb": 10
+    },
+    "source": "srd"
+  },
+  {
+    "id": "handaxe",
+    "name": {
+      "en": "Handaxe"
+    },
+    "price": 5,
+    "damage": {
+      "formula": "1d6",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "javelin",
+    "name": {
+      "en": "Javelin"
+    },
+    "price": 0.5,
+    "damage": {
+      "formula": "1d6",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "light-hammer",
+    "name": {
+      "en": "Light hammer"
+    },
+    "price": 2,
+    "damage": {
+      "formula": "1d4",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "mace",
+    "name": {
+      "en": "Mace"
+    },
+    "price": 5,
+    "damage": {
+      "formula": "1d6",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 2,
+      "lb": 4
+    },
+    "source": "srd"
+  },
+  {
+    "id": "quarterstaff",
+    "name": {
+      "en": "Quarterstaff"
+    },
+    "price": 0.2,
+    "damage": {
+      "formula": "1d6",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 2,
+      "lb": 4
+    },
+    "source": "srd"
+  },
+  {
+    "id": "sickle",
+    "name": {
+      "en": "Sickle"
+    },
+    "price": 1,
+    "damage": {
+      "formula": "1d4",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "spear",
+    "name": {
+      "en": "Spear"
+    },
+    "price": 1,
+    "damage": {
+      "formula": "1d6",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 1.5,
+      "lb": 3
+    },
+    "source": "srd"
+  },
+  {
+    "id": "crossbow-light",
+    "name": {
+      "en": "Crossbow, light"
+    },
+    "price": 25,
+    "damage": {
+      "formula": "1d8",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 2.5,
+      "lb": 5
+    },
+    "source": "srd"
+  },
+  {
+    "id": "dart",
+    "name": {
+      "en": "Dart"
+    },
+    "price": 0.05,
+    "damage": {
+      "formula": "1d4",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 0.125,
+      "lb": 0.25
+    },
+    "source": "srd"
+  },
+  {
+    "id": "shortbow",
+    "name": {
+      "en": "Shortbow"
+    },
+    "price": 25,
+    "damage": {
+      "formula": "1d6",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "sling",
+    "name": {
+      "en": "Sling"
+    },
+    "price": 0.1,
+    "damage": {
+      "formula": "1d4",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 0,
+      "lb": 0
+    },
+    "source": "srd"
+  },
+  {
+    "id": "battleaxe",
+    "name": {
+      "en": "Battleaxe"
+    },
+    "price": 10,
+    "damage": {
+      "formula": "1d8",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 2,
+      "lb": 4
+    },
+    "source": "srd"
+  },
+  {
+    "id": "flail",
+    "name": {
+      "en": "Flail"
+    },
+    "price": 10,
+    "damage": {
+      "formula": "1d8",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "glaive",
+    "name": {
+      "en": "Glaive"
+    },
+    "price": 20,
+    "damage": {
+      "formula": "1d10",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 3,
+      "lb": 6
+    },
+    "source": "srd"
+  },
+  {
+    "id": "greataxe",
+    "name": {
+      "en": "Greataxe"
+    },
+    "price": 30,
+    "damage": {
+      "formula": "1d12",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 3.5,
+      "lb": 7
+    },
+    "source": "srd"
+  },
+  {
+    "id": "greatsword",
+    "name": {
+      "en": "Greatsword"
+    },
+    "price": 50,
+    "damage": {
+      "formula": "2d6",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 3,
+      "lb": 6
+    },
+    "source": "srd"
+  },
+  {
+    "id": "halberd",
+    "name": {
+      "en": "Halberd"
+    },
+    "price": 20,
+    "damage": {
+      "formula": "1d10",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 3,
+      "lb": 6
+    },
+    "source": "srd"
+  },
+  {
+    "id": "lance",
+    "name": {
+      "en": "Lance"
+    },
+    "price": 10,
+    "damage": {
+      "formula": "1d12",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 3,
+      "lb": 6
+    },
+    "source": "srd"
+  },
+  {
+    "id": "longsword",
+    "name": {
+      "en": "Longsword"
+    },
+    "price": 15,
+    "damage": {
+      "formula": "1d8",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 1.5,
+      "lb": 3
+    },
+    "source": "srd"
+  },
+  {
+    "id": "maul",
+    "name": {
+      "en": "Maul"
+    },
+    "price": 10,
+    "damage": {
+      "formula": "2d6",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 5,
+      "lb": 10
+    },
+    "source": "srd"
+  },
+  {
+    "id": "morningstar",
+    "name": {
+      "en": "Morningstar"
+    },
+    "price": 15,
+    "damage": {
+      "formula": "1d8",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 2,
+      "lb": 4
+    },
+    "source": "srd"
+  },
+  {
+    "id": "pike",
+    "name": {
+      "en": "Pike"
+    },
+    "price": 5,
+    "damage": {
+      "formula": "1d10",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 9,
+      "lb": 18
+    },
+    "source": "srd"
+  },
+  {
+    "id": "rapier",
+    "name": {
+      "en": "Rapier"
+    },
+    "price": 25,
+    "damage": {
+      "formula": "1d8",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "scimitar",
+    "name": {
+      "en": "Scimitar"
+    },
+    "price": 25,
+    "damage": {
+      "formula": "1d6",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 1.5,
+      "lb": 3
+    },
+    "source": "srd"
+  },
+  {
+    "id": "shortsword",
+    "name": {
+      "en": "Shortsword"
+    },
+    "price": 10,
+    "damage": {
+      "formula": "1d6",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "trident",
+    "name": {
+      "en": "Trident"
+    },
+    "price": 5,
+    "damage": {
+      "formula": "1d6",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 2,
+      "lb": 4
+    },
+    "source": "srd"
+  },
+  {
+    "id": "war-pick",
+    "name": {
+      "en": "War pick"
+    },
+    "price": 5,
+    "damage": {
+      "formula": "1d8",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "warhammer",
+    "name": {
+      "en": "Warhammer"
+    },
+    "price": 15,
+    "damage": {
+      "formula": "1d8",
+      "type": "bludgeoning"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "whip",
+    "name": {
+      "en": "Whip"
+    },
+    "price": 2,
+    "damage": {
+      "formula": "1d4",
+      "type": "slashing"
+    },
+    "weight": {
+      "kg": 1.5,
+      "lb": 3
+    },
+    "source": "srd"
+  },
+  {
+    "id": "blowgun",
+    "name": {
+      "en": "Blowgun"
+    },
+    "price": 10,
+    "damage": {
+      "formula": "1",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 0.5,
+      "lb": 1
+    },
+    "source": "srd"
+  },
+  {
+    "id": "crossbow-hand",
+    "name": {
+      "en": "Crossbow, hand"
+    },
+    "price": 75,
+    "damage": {
+      "formula": "1d6",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 1.5,
+      "lb": 3
+    },
+    "source": "srd"
+  },
+  {
+    "id": "crossbow-heavy",
+    "name": {
+      "en": "Crossbow, heavy"
+    },
+    "price": 50,
+    "damage": {
+      "formula": "1d10",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 9,
+      "lb": 18
+    },
+    "source": "srd"
+  },
+  {
+    "id": "longbow",
+    "name": {
+      "en": "Longbow"
+    },
+    "price": 50,
+    "damage": {
+      "formula": "1d8",
+      "type": "piercing"
+    },
+    "weight": {
+      "kg": 1,
+      "lb": 2
+    },
+    "source": "srd"
+  },
+  {
+    "id": "net",
+    "name": {
+      "en": "Net"
+    },
+    "price": 1,
+    "weight": {
+      "kg": 1.5,
+      "lb": 3
+    },
+    "source": "srd"
+  }
+]
