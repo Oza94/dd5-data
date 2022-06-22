@@ -1,4 +1,3 @@
-import scrapeIt from "scrape-it";
 import {
   ADDWeaponListScrap,
   ADDWeaponScrapEN,
@@ -8,6 +7,7 @@ import { parseDamage, parsePrice, parseWeight } from "./utils";
 import { RecursivePartial, Weapon } from "../../types";
 import { slugify } from "../../utils/slugify";
 import { mergeById } from "../../utils/collections";
+import { scrape } from "../../utils/scrapeIt";
 
 function transformEN(raw: ADDWeaponScrapEN): Weapon {
   return {
@@ -44,32 +44,34 @@ function isFullFR(raw?: Partial<ADDWeaponScrapFR>): raw is ADDWeaponScrapFR {
 }
 
 export async function aideddScrapWeapons(): Promise<Weapon[]> {
-  const { data: data_en } = await scrapeIt<
-    ADDWeaponListScrap<ADDWeaponScrapEN>
-  >("https://www.aidedd.org/en/rules/equipment/weapons/", {
-    weapons: {
-      listItem: ".content table tr",
-      data: {
-        name: "td:nth-child(1)",
-        price: "td:nth-child(2)",
-        damage: "td:nth-child(3)",
-        weight: "td:nth-child(4)",
+  const { data: data_en } = await scrape<ADDWeaponListScrap<ADDWeaponScrapEN>>(
+    "https://www.aidedd.org/en/rules/equipment/weapons/",
+    {
+      weapons: {
+        listItem: ".content table tr",
+        data: {
+          name: "td:nth-child(1)",
+          price: "td:nth-child(2)",
+          damage: "td:nth-child(3)",
+          weight: "td:nth-child(4)",
+        },
       },
-    },
-  });
+    }
+  );
 
-  const { data: data_fr } = await scrapeIt<
-    ADDWeaponListScrap<ADDWeaponScrapFR>
-  >("https://www.aidedd.org/regles/equipement/armes/", {
-    weapons: {
-      listItem: ".content table tr",
-      data: {
-        name: "td:nth-child(1)",
-        vo: "td:nth-child(2)",
-        weight: "td:nth-child(4)",
+  const { data: data_fr } = await scrape<ADDWeaponListScrap<ADDWeaponScrapFR>>(
+    "https://www.aidedd.org/regles/equipement/armes/",
+    {
+      weapons: {
+        listItem: ".content table tr",
+        data: {
+          name: "td:nth-child(1)",
+          vo: "td:nth-child(2)",
+          weight: "td:nth-child(4)",
+        },
       },
-    },
-  });
+    }
+  );
 
   const weapons_en = data_en.weapons.slice(1).filter(isFullEN).map(transformEN);
   const partials_fr = data_fr.weapons
