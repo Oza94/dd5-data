@@ -1,3 +1,13 @@
+// Utils types
+
+export type RecursivePartial<T> = {
+  [P in keyof T]?: T[P] extends (infer U)[]
+    ? RecursivePartial<U>[]
+    : T[P] extends object
+    ? RecursivePartial<T[P]>
+    : T[P];
+};
+
 // Generic types
 
 export type Locale = string;
@@ -16,7 +26,11 @@ export type Weight = {
   lb: number;
 };
 
-// Documents types
+// modal types
+
+export interface Model {
+  id: string;
+}
 
 export type Weapon = {
   id: string;

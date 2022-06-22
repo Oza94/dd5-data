@@ -2,7 +2,8 @@
   {
     "id": "club",
     "name": {
-      "en": "Club"
+      "en": "Club",
+      "fr": "Gourdin"
     },
     "price": 0.1,
     "damage": {
@@ -18,7 +19,8 @@
   {
     "id": "dagger",
     "name": {
-      "en": "Dagger"
+      "en": "Dagger",
+      "fr": "Dague"
     },
     "price": 2,
     "damage": {
@@ -34,7 +36,8 @@
   {
     "id": "greatclub",
     "name": {
-      "en": "Greatclub"
+      "en": "Greatclub",
+      "fr": "Massue"
     },
     "price": 0.2,
     "damage": {
@@ -50,7 +53,8 @@
   {
     "id": "handaxe",
     "name": {
-      "en": "Handaxe"
+      "en": "Handaxe",
+      "fr": "Hachette"
     },
     "price": 5,
     "damage": {
@@ -66,7 +70,8 @@
   {
     "id": "javelin",
     "name": {
-      "en": "Javelin"
+      "en": "Javelin",
+      "fr": "Javeline"
     },
     "price": 0.5,
     "damage": {
@@ -82,7 +87,8 @@
   {
     "id": "light-hammer",
     "name": {
-      "en": "Light hammer"
+      "en": "Light hammer",
+      "fr": "Marteau léger"
     },
     "price": 2,
     "damage": {
@@ -98,7 +104,8 @@
   {
     "id": "mace",
     "name": {
-      "en": "Mace"
+      "en": "Mace",
+      "fr": "Masse d'armes"
     },
     "price": 5,
     "damage": {
@@ -114,7 +121,8 @@
   {
     "id": "quarterstaff",
     "name": {
-      "en": "Quarterstaff"
+      "en": "Quarterstaff",
+      "fr": "Bâton"
     },
     "price": 0.2,
     "damage": {
@@ -130,7 +138,8 @@
   {
     "id": "sickle",
     "name": {
-      "en": "Sickle"
+      "en": "Sickle",
+      "fr": "Serpe"
     },
     "price": 1,
     "damage": {
@@ -146,7 +155,8 @@
   {
     "id": "spear",
     "name": {
-      "en": "Spear"
+      "en": "Spear",
+      "fr": "Lance"
     },
     "price": 1,
     "damage": {
@@ -162,7 +172,8 @@
   {
     "id": "crossbow-light",
     "name": {
-      "en": "Crossbow, light"
+      "en": "Crossbow, light",
+      "fr": "Arbalète légère"
     },
     "price": 25,
     "damage": {
@@ -178,7 +189,8 @@
   {
     "id": "dart",
     "name": {
-      "en": "Dart"
+      "en": "Dart",
+      "fr": "Fléchette"
     },
     "price": 0.05,
     "damage": {
@@ -186,7 +198,7 @@
       "type": "piercing"
     },
     "weight": {
-      "kg": 0.125,
+      "kg": 0.1,
       "lb": 0.25
     },
     "source": "srd"
@@ -194,7 +206,8 @@
   {
     "id": "shortbow",
     "name": {
-      "en": "Shortbow"
+      "en": "Shortbow",
+      "fr": "Arc court"
     },
     "price": 25,
     "damage": {
@@ -210,7 +223,8 @@
   {
     "id": "sling",
     "name": {
-      "en": "Sling"
+      "en": "Sling",
+      "fr": "Fronde"
     },
     "price": 0.1,
     "damage": {
@@ -226,7 +240,8 @@
   {
     "id": "battleaxe",
     "name": {
-      "en": "Battleaxe"
+      "en": "Battleaxe",
+      "fr": "Hache d'armes"
     },
     "price": 10,
     "damage": {
@@ -242,7 +257,8 @@
   {
     "id": "flail",
     "name": {
-      "en": "Flail"
+      "en": "Flail",
+      "fr": "Fléau d'armes"
     },
     "price": 10,
     "damage": {
@@ -258,7 +274,8 @@
   {
     "id": "glaive",
     "name": {
-      "en": "Glaive"
+      "en": "Glaive",
+      "fr": "Coutille"
     },
     "price": 20,
     "damage": {
@@ -274,7 +291,8 @@
   {
     "id": "greataxe",
     "name": {
-      "en": "Greataxe"
+      "en": "Greataxe",
+      "fr": "Hache à deux mains"
     },
     "price": 30,
     "damage": {
@@ -290,7 +308,8 @@
   {
     "id": "greatsword",
     "name": {
-      "en": "Greatsword"
+      "en": "Greatsword",
+      "fr": "Épée à deux mains"
     },
     "price": 50,
     "damage": {
@@ -306,7 +325,8 @@
   {
     "id": "halberd",
     "name": {
-      "en": "Halberd"
+      "en": "Halberd",
+      "fr": "Hallebarde"
     },
     "price": 20,
     "damage": {
@@ -322,7 +342,8 @@
   {
     "id": "lance",
     "name": {
-      "en": "Lance"
+      "en": "Lance",
+      "fr": "Lance d’arçon"
     },
     "price": 10,
     "damage": {
@@ -338,7 +359,8 @@
   {
     "id": "longsword",
     "name": {
-      "en": "Longsword"
+      "en": "Longsword",
+      "fr": "Épée longue"
     },
     "price": 15,
     "damage": {
@@ -354,7 +376,8 @@
   {
     "id": "maul",
     "name": {
-      "en": "Maul"
+      "en": "Maul",
+      "fr": "Maillet"
     },
     "price": 10,
     "damage": {
@@ -370,7 +393,8 @@
   {
     "id": "morningstar",
     "name": {
-      "en": "Morningstar"
+      "en": "Morningstar",
+      "fr": "Morgenstern"
     },
     "price": 15,
     "damage": {
@@ -386,7 +410,8 @@
   {
     "id": "pike",
     "name": {
-      "en": "Pike"
+      "en": "Pike",
+      "fr": "Pique"
     },
     "price": 5,
     "damage": {
@@ -402,7 +427,8 @@
   {
     "id": "rapier",
     "name": {
-      "en": "Rapier"
+      "en": "Rapier",
+      "fr": "Rapière"
     },
     "price": 25,
     "damage": {
@@ -418,7 +444,8 @@
   {
     "id": "scimitar",
     "name": {
-      "en": "Scimitar"
+      "en": "Scimitar",
+      "fr": "Cimeterre"
     },
     "price": 25,
     "damage": {
@@ -434,7 +461,8 @@
   {
     "id": "shortsword",
     "name": {
-      "en": "Shortsword"
+      "en": "Shortsword",
+      "fr": "Épée courte"
     },
     "price": 10,
     "damage": {
@@ -450,7 +478,8 @@
   {
     "id": "trident",
     "name": {
-      "en": "Trident"
+      "en": "Trident",
+      "fr": "Trident"
     },
     "price": 5,
     "damage": {
@@ -466,7 +495,8 @@
   {
     "id": "war-pick",
     "name": {
-      "en": "War pick"
+      "en": "War pick",
+      "fr": "Pic de guerre"
     },
     "price": 5,
     "damage": {
@@ -482,7 +512,8 @@
   {
     "id": "warhammer",
     "name": {
-      "en": "Warhammer"
+      "en": "Warhammer",
+      "fr": "Marteau de guerre"
     },
     "price": 15,
     "damage": {
@@ -498,7 +529,8 @@
   {
     "id": "whip",
     "name": {
-      "en": "Whip"
+      "en": "Whip",
+      "fr": "Fouet"
     },
     "price": 2,
     "damage": {
@@ -514,7 +546,8 @@
   {
     "id": "blowgun",
     "name": {
-      "en": "Blowgun"
+      "en": "Blowgun",
+      "fr": "Sarbacane"
     },
     "price": 10,
     "damage": {
@@ -530,7 +563,8 @@
   {
     "id": "crossbow-hand",
     "name": {
-      "en": "Crossbow, hand"
+      "en": "Crossbow, hand",
+      "fr": "Arbalète de poing"
     },
     "price": 75,
     "damage": {
@@ -546,7 +580,8 @@
   {
     "id": "crossbow-heavy",
     "name": {
-      "en": "Crossbow, heavy"
+      "en": "Crossbow, heavy",
+      "fr": "Arbalète lourde"
     },
     "price": 50,
     "damage": {
@@ -562,7 +597,8 @@
   {
     "id": "longbow",
     "name": {
-      "en": "Longbow"
+      "en": "Longbow",
+      "fr": "Arc long"
     },
     "price": 50,
     "damage": {
@@ -578,7 +614,8 @@
   {
     "id": "net",
     "name": {
-      "en": "Net"
+      "en": "Net",
+      "fr": "Filet"
     },
     "price": 1,
     "weight": {

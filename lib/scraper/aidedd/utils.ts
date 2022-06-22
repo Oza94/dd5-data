@@ -6,7 +6,7 @@ export const RE_PRICE = /^[0-9]+ [gsc]p$/;
 export const RE_DAMAGE =
   /^(?<formula>[0-9]+(d[0-9]+)?) (?<type>bludgeoning|piercing|slashing)$/;
 export const RE_WEIGHT =
-  /^(?<value>[0-9]+(,[0-9]+|\/[0-9]+)?) (?<unit>(lb\.|kg))$/;
+  /^(?<value>[0-9]+(,[0-9]+|\/[0-9]+)?) (?<unit>(lb\.|kg|g))$/;
 export const KG_LB_RATIO = 2;
 
 export function parsePrice(str: ADDPriceScrap) {
@@ -50,7 +50,7 @@ export function parseWeight(str: string): Weight {
   }
 
   // We may have stuff like "1/4 lb." that requires something more robust than parseFloat
-  const parsed: number = evaluate(match.groups.value);
+  const parsed: number = evaluate(match.groups.value.replace(",", "."));
   let kg = 0;
   let lb = 0;
 
@@ -58,6 +58,11 @@ export function parseWeight(str: string): Weight {
     case "kg": {
       kg = parsed;
       lb = parsed * KG_LB_RATIO;
+      break;
+    }
+    case "g": {
+      kg = parsed * 0.001;
+      lb = kg * KG_LB_RATIO;
       break;
     }
     case "lb.": {
