@@ -5,5 +5,12 @@
       "fr": "Manuel des Joueurs",
       "en": "Player’s Handbook"
     }
+  },
+  {
+    "id": "xtge",
+    "name": {
+      "fr": "Le Guide Complet de Xanathar",
+      "en": "Xanathar´s Guide to Everything"
+    }
   }
 ]

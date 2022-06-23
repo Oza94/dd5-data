@@ -18,3 +18,33 @@ export type ADDWeaponScrapFR = {
 export type ADDWeaponListScrap<T> = {
   weapons: Partial<T>[];
 };
+
+export type ADDListSpellScrap = {
+  spells: {
+    name: string;
+    url: string;
+  }[];
+};
+
+export type ADDSpellCardScrapEN = {
+  name: string;
+  urlFr: string;
+  nameEn: string;
+  nameFr: string;
+  school: string;
+  castingTime: string;
+  range: string;
+  components: string;
+  duration: string;
+  description: string;
+  classesSrd: string[];
+  source: string;
+};
+
+export type ADDSpellCardScrapFR = {
+  castingTime: string;
+  range: string;
+  components: string;
+  duration: string;
+  description: string;
+};

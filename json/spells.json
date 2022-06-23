@@ -1,0 +1,500 @@
+[
+  {
+    "id": "abi-dalzim-s-horrid-wilting",
+    "name": {
+      "fr": "Flétrissure épouvantable d'Abi-Dalzim",
+      "en": "Abi-Dalzim's Horrid Wilting"
+    },
+    "level": 8,
+    "ritual": false,
+    "schoolId": "necromancy",
+    "range": {
+      "type": "ranged",
+      "distance": {
+        "meters": 45,
+        "feet": 150
+      }
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "action",
+      "label": {
+        "en": "1 action",
+        "fr": "1 action"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 0,
+      "unit": "none",
+      "label": {
+        "fr": "instantanée",
+        "en": "instantaneous"
+      }
+    },
+    "description": {
+      "en": "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren&apos;t affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 12d8 necrotic damage on a failed save, or half as much damage on a successful one.<br>Nonmagical plants in the area that aren&apos;t creatures, such as trees and shrubs, wither and die instantly.<br>",
+      "fr": "Vous absorbez l&apos;humidit&#xE9; de chaque cr&#xE9;ature dans un cube de 9 m&#xE8;tres d&apos;ar&#xEA;te centr&#xE9; sur un point de votre choix dans la port&#xE9;e du sort. Chaque cr&#xE9;ature dans cette zone doit faire un jet de sauvegarde de Constitution. Les morts-vivants et les artificiels ne sont pas affect&#xE9;s ; les plantes et les &#xE9;l&#xE9;mentaires d&apos;eau font ce jet de sauvegarde avec un d&#xE9;savantage. Une cr&#xE9;ature subit 12d8 d&#xE9;g&#xE2;ts n&#xE9;crotiques en cas d&apos;&#xE9;chec, ou la moiti&#xE9; de ces d&#xE9;g&#xE2;ts en cas de r&#xE9;ussite.<br>Les plantes non magiques dans la zone qui ne sont pas des cr&#xE9;atures, comme les arbres et les arbustes, se fl&#xE9;trissent et meurent instantan&#xE9;ment.<br>"
+    },
+    "classes": [
+      {
+        "classId": "sorcerer",
+        "sourceId": "xtge"
+      },
+      {
+        "classId": "wizard",
+        "sourceId": "xtge"
+      }
+    ],
+    "sourceId": "xtge"
+  },
+  {
+    "id": "absorb-elements",
+    "name": {
+      "fr": "Absorption des éléments",
+      "en": "Absorb Elements"
+    },
+    "level": 1,
+    "ritual": false,
+    "schoolId": "abjuration",
+    "range": {
+      "type": "self"
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "reaction",
+      "label": {
+        "en": "1 reaction, which you take when you take acid, cold, fire, lightning, or thunder damage",
+        "fr": "1 réaction, que vous prenez lorsque vous subissez des dégâts d'acide, de froid, de feu, de foudre ou de tonnerre"
+      },
+      "condition": {
+        "en": ", which you take when you take acid, cold, fire, lightning, or thunder damage",
+        "fr": ", que vous prenez lorsque vous subissez des dégâts d'acide, de froid, de feu, de foudre ou de tonnerre"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 1,
+      "unit": "round",
+      "label": {
+        "fr": "1 round",
+        "en": "1 round"
+      }
+    },
+    "description": {
+      "en": "The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.<br><strong><em>At Higher Levels</em></strong>. When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.<br>",
+      "fr": "Le sort capte une partie de l&apos;&#xE9;nergie entrante, ce qui r&#xE9;duit son effet sur vous et la stocke pour votre prochaine attaque au corps &#xE0; corps. Vous obtenez une r&#xE9;sistance &#xE0; ce type de d&#xE9;g&#xE2;ts jusqu&apos;au d&#xE9;but de votre prochain tour. De plus, la premi&#xE8;re fois que vous touchez avec une attaque au corps &#xE0; corps lors de votre prochain tour, la cible subit 1d6 d&#xE9;g&#xE2;ts suppl&#xE9;mentaires du type d&apos;&#xE9;l&#xE9;ment cibl&#xE9;, et le sort se termine.<br><strong><em>Aux niveaux sup&#xE9;rieurs</em></strong>. Lorsque vous lancez ce sort en utilisant un emplacement de sort de niveau 2 ou sup&#xE9;rieur, les d&#xE9;g&#xE2;ts suppl&#xE9;mentaires augmentent de 1d6 pour chaque niveau d&apos;emplacement au-del&#xE0; du niveau 1.<br>"
+    },
+    "classes": [
+      {
+        "classId": "druid",
+        "sourceId": "xtge"
+      },
+      {
+        "classId": "ranger",
+        "sourceId": "xtge"
+      },
+      {
+        "classId": "sorcerer",
+        "sourceId": "xtge"
+      },
+      {
+        "classId": "wizard",
+        "sourceId": "xtge"
+      }
+    ],
+    "sourceId": "xtge"
+  },
+  {
+    "id": "acid-splash",
+    "name": {
+      "fr": "Aspersion d'acide",
+      "en": "Acid Splash"
+    },
+    "level": 0,
+    "ritual": false,
+    "schoolId": "conjuration",
+    "range": {
+      "type": "ranged",
+      "distance": {
+        "meters": 18,
+        "feet": 60
+      }
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "action",
+      "label": {
+        "en": "1 action",
+        "fr": "1 action"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 0,
+      "unit": "none",
+      "label": {
+        "fr": "instantanée",
+        "en": "instantaneous"
+      }
+    },
+    "description": {
+      "en": "You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.<br>This spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).<br>",
+      "fr": "Vous propulsez une bulle d&apos;acide. Choisissez une ou deux cr&#xE9;atures que vous pouvez voir, &#xE0; 1,50 m&#xE8;tre ou moins l&apos;une de l&apos;autre, dans la port&#xE9;e du sort. La cible doit r&#xE9;ussir un jet de sauvegarde de Dext&#xE9;rit&#xE9; ou subir 1d6 d&#xE9;g&#xE2;ts d&apos;acide.<br>Les d&#xE9;g&#xE2;ts de ce sort augmentent de 1d6 lorsque vous atteignez le niveau 5 (2d6), le niveau 11 (3d6) et le niveau 17 (4d6).<br>"
+    },
+    "classes": [
+      {
+        "classId": "sorcerer",
+        "sourceId": "srd"
+      },
+      {
+        "classId": "wizard",
+        "sourceId": "srd"
+      }
+    ],
+    "sourceId": "srd"
+  },
+  {
+    "id": "aganazzar-s-scorcher",
+    "name": {
+      "fr": "Flambée d'Aganazzar",
+      "en": "Aganazzar's Scorcher"
+    },
+    "level": 2,
+    "ritual": false,
+    "schoolId": "evocation",
+    "range": {
+      "type": "ranged",
+      "distance": {
+        "meters": 9,
+        "feet": 30
+      }
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "action",
+      "label": {
+        "en": "1 action",
+        "fr": "1 action"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 0,
+      "unit": "none",
+      "label": {
+        "fr": "instantanée",
+        "en": "instantaneous"
+      }
+    },
+    "description": {
+      "en": "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one.<br><strong><em>At Higher Levels</em></strong>. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.<br>",
+      "fr": "Une ligne de flammes rugissantes de 9 m&#xE8;tres de long et 1,50 m&#xE8;tre de large &#xE9;mane de vous dans une direction que vous choisissez. Chaque cr&#xE9;ature dans la trajectoire doit effectuer un jet de sauvegarde de Dext&#xE9;rit&#xE9;, subissant 3d8 d&#xE9;g&#xE2;ts de feu en cas d&apos;&#xE9;chec, ou la moiti&#xE9; de ces d&#xE9;g&#xE2;ts en cas de r&#xE9;ussite.<br><strong><em>Aux niveaux sup&#xE9;rieurs</em></strong>. Lorsque vous lancez ce sort en utilisant un emplacement de sort de niveau 3 ou sup&#xE9;rieur, les d&#xE9;g&#xE2;ts augmentent de 1d8 pour chaque niveau d&apos;emplacement au-del&#xE0; du niveau 2.<br>"
+    },
+    "classes": [
+      {
+        "classId": "sorcerer",
+        "sourceId": "xtge"
+      },
+      {
+        "classId": "wizard",
+        "sourceId": "xtge"
+      }
+    ],
+    "sourceId": "xtge"
+  },
+  {
+    "id": "aid",
+    "name": {
+      "fr": "Aide",
+      "en": "Aid"
+    },
+    "level": 2,
+    "ritual": false,
+    "schoolId": "abjuration",
+    "range": {
+      "type": "ranged",
+      "distance": {
+        "meters": 9,
+        "feet": 30
+      }
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "action",
+      "label": {
+        "en": "1 action",
+        "fr": "1 action"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "label": {
+        "fr": "8 heures",
+        "en": "8 hours"
+      }
+    },
+    "description": {
+      "en": "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target&apos;s hit point maximum and current hit points increase by 5 for the duration.<br><strong><em>At Higher Levels</em></strong>. When you cast this spell using a spell slot of 3rd level or higher, a target&apos;s hit points increase by an additional 5 for each slot level above 2nd.<br>",
+      "fr": "Votre sort emplit vos alli&#xE9;s de robustesse et de r&#xE9;solution. Choisissez jusqu&apos;&#xE0; trois cr&#xE9;atures &#xE0; port&#xE9;e. Le maximum de points de vie et les points de vie actuels de chaque cible augmentent de 5 pour la dur&#xE9;e du sort.<br><strong><em>Aux niveaux sup&#xE9;rieurs</em></strong>. Lorsque vous lancez ce sort en utilisant un emplacement de sort de niveau 3 ou sup&#xE9;rieur, les points de vie de chaque cible augmentent de 5 pour chaque niveau d&apos;emplacement au-del&#xE0; du niveau 2.<br>"
+    },
+    "classes": [
+      {
+        "classId": "cleric",
+        "sourceId": "srd"
+      },
+      {
+        "classId": "paladin",
+        "sourceId": "srd"
+      }
+    ],
+    "sourceId": "srd"
+  },
+  {
+    "id": "alarm",
+    "name": {
+      "fr": "Alarme",
+      "en": "Alarm"
+    },
+    "level": 1,
+    "ritual": true,
+    "schoolId": "abjuration",
+    "range": {
+      "type": "ranged",
+      "distance": {
+        "meters": 9,
+        "feet": 30
+      }
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "minute",
+      "label": {
+        "en": "1 minute",
+        "fr": "1 minute"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "label": {
+        "fr": "8 heures",
+        "en": "8 hours"
+      }
+    },
+    "description": {
+      "en": "You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won&apos;t set off the alarm. You also choose whether the alarm is mental or audible.<br>A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.<br>",
+      "fr": "Vous mettez en place une alarme contre les intrusions ind&#xE9;sirables. Choisissez une porte, une fen&#xEA;tre, ou une zone &#xE0; port&#xE9;e qui ne d&#xE9;passe pas un cube de 6 m&#xE8;tres d&apos;ar&#xEA;te. Jusqu&apos;&#xE0; la fin du sort, une alarme vous alerte lorsqu&apos;une cr&#xE9;ature de taille TP ou sup&#xE9;rieure touche ou p&#xE9;n&#xE8;tre la zone surveill&#xE9;e. Lorsque vous lancez ce sort, vous pouvez d&#xE9;signer des cr&#xE9;atures qui ne d&#xE9;clencheront pas l&apos;alarme. Vous pouvez &#xE9;galement choisir si l&apos;alarme est audible ou juste mentale.<br>Une alarme mentale vous alerte avec une sonnerie dans votre esprit &#xE0; condition que vous soyez &#xE0; 1,5 kilom&#xE8;tre maximum de la zone surveill&#xE9;e. Cette sonnerie vous r&#xE9;veille si vous &#xEA;tes endormi. Une alarme audible produit le son d&apos;une clochette &#xE0; main, pendant 10 secondes, pouvant &#xEA;tre entendue &#xE0; 18 m&#xE8;tres.<br>"
+    },
+    "classes": [
+      {
+        "classId": "ranger",
+        "sourceId": "srd"
+      },
+      {
+        "classId": "wizard",
+        "sourceId": "srd"
+      }
+    ],
+    "sourceId": "srd"
+  },
+  {
+    "id": "alter-self",
+    "name": {
+      "fr": "Modification d'apparence",
+      "en": "Alter Self"
+    },
+    "level": 2,
+    "ritual": false,
+    "schoolId": "transmutation",
+    "range": {
+      "type": "self"
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "action",
+      "label": {
+        "en": "1 action",
+        "fr": "1 action"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "label": {
+        "fr": "concentration, jusqu'à 1 heure",
+        "en": "Concentration, up to 1 hour"
+      }
+    },
+    "description": {
+      "en": "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.<br><strong><em>Aquatic Adaptation</em></strong>. You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.<br><strong><em>Change Appearance</em></strong>. You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can&apos;t appear as a creature of a different size than you, and your basic shape stays the same; if you&apos;re bipedal, you can&apos;t use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.<br><strong><em>Natural Weapons</em></strong>. You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.<br>",
+      "fr": "Vous endossez une nouvelle forme. Lorsque vous lancez ce sort, choisissez l&apos;une des options suivantes, dont les effets s&apos;appliqueront jusqu&apos;&#xE0; ce que le sort prenne fin. Tant que le sort est actif, vous pouvez mettre un terme &#xE0; une option, en d&#xE9;pensant une action, pour gagner les b&#xE9;n&#xE9;fices d&apos;une option diff&#xE9;rente.<br><strong><em>Adaptation aquatique</em></strong>. Vous adaptez votre corps &#xE0; un environnement aquatique, en vous faisant pousser des branchies et des expansions palmaires entre les doigts. Vous pouvez respirer sous l&apos;eau et obtenez une vitesse de nage &#xE9;gale &#xE0; votre vitesse de marche.<br><strong><em>Changement d&apos;apparence</em></strong>. Vous transformez votre apparence. Vous d&#xE9;cidez &#xE0; quoi vous ressemblez, que ce soit votre taille, votre poids, les traits de votre visage, le son de votre voix, la longueur de vos cheveux, votre pigmentation, et vos signes distinctifs, le cas &#xE9;ch&#xE9;ant. Vous pouvez prendre l&apos;apparence d&apos;un membre d&apos;une autre race, sans r&#xE9;percussions sur vos caract&#xE9;ristiques ou autres traits raciaux. Vous ne pouvez pas prendre l&apos;apparence d&apos;une cr&#xE9;ature d&apos;une cat&#xE9;gorie de taille diff&#xE9;rente de la v&#xF4;tre, et votre forme de base doit rester la m&#xEA;me ; si vous &#xEA;tes un bip&#xE8;de, vous ne pouvez pas utiliser ce sort pour devenir quadrup&#xE8;de par exemple. &#xC0; tout moment pendant la dur&#xE9;e du sort, vous pouvez utiliser votre action pour modifier de nouveau votre apparence.<br><strong><em>Armes naturelles</em></strong>. Vous vous dotez de griffes, crocs, &#xE9;pines, cornes ou d&apos;une autre arme naturelle de votre choix. Votre attaque &#xE0; mains nues inflige 1d6 d&#xE9;g&#xE2;ts contondants, perforants ou tranchants, suivant ce qui est le plus appropri&#xE9; &#xE0; l&apos;arme naturelle que vous avez choisie, et vous obtenez la ma&#xEE;trise de votre attaque &#xE0; mains nues. Enfin, votre arme naturelle est une arme magique et a un bonus de +1 aux jets d&apos;attaque et de d&#xE9;g&#xE2;ts.<br>"
+    },
+    "classes": [
+      {
+        "classId": "sorcerer",
+        "sourceId": "srd"
+      },
+      {
+        "classId": "wizard",
+        "sourceId": "srd"
+      }
+    ],
+    "sourceId": "srd"
+  },
+  {
+    "id": "animal-friendship",
+    "name": {
+      "fr": "Amitié avec les animaux",
+      "en": "Animal Friendship"
+    },
+    "level": 1,
+    "ritual": false,
+    "schoolId": "enchantment",
+    "range": {
+      "type": "ranged",
+      "distance": {
+        "meters": 9,
+        "feet": 30
+      }
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "action",
+      "label": {
+        "en": "1 action",
+        "fr": "1 action"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hour",
+      "label": {
+        "fr": "24 heures",
+        "en": "24 hours"
+      }
+    },
+    "description": {
+      "en": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast&apos;s Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell&apos;s duration. If you or one of your companions harms the target, the spell ends.<br><strong><em>At Higher Levels</em></strong>. When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.<br>",
+      "fr": "Ce sort vous permet de persuader une b&#xEA;te que vous ne lui voulez aucun mal. Choisissez une b&#xEA;te que vous pouvez voir dans la port&#xE9;e du sort. Elle doit vous voir et vous entendre. Si l&apos;Intelligence de la b&#xEA;te est de 4 ou plus, le sort &#xE9;choue. Autrement, la b&#xEA;te doit r&#xE9;ussir un jet de sauvegarde de Sagesse ou &#xEA;tre charm&#xE9;e pour la dur&#xE9;e du sort. Si vous, ou un de vos compagnons, blessez la cible, le sort prend fin.<br><strong><em>Aux niveaux sup&#xE9;rieurs</em></strong>. Lorsque vous lancez ce sort en utilisant un emplacement de sort de niveau 2 ou sup&#xE9;rieur, vous pouvez charmer une b&#xEA;te suppl&#xE9;mentaire pour chaque niveau d&apos;emplacement au-del&#xE0; du niveau 1.<br>"
+    },
+    "classes": [
+      {
+        "classId": "bard",
+        "sourceId": "srd"
+      },
+      {
+        "classId": "druid",
+        "sourceId": "srd"
+      },
+      {
+        "classId": "ranger",
+        "sourceId": "srd"
+      }
+    ],
+    "sourceId": "srd"
+  },
+  {
+    "id": "animal-messenger",
+    "name": {
+      "fr": "Messager animal",
+      "en": "Animal Messenger"
+    },
+    "level": 2,
+    "ritual": true,
+    "schoolId": "enchantment",
+    "range": {
+      "type": "ranged",
+      "distance": {
+        "meters": 9,
+        "feet": 30
+      }
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "action",
+      "label": {
+        "en": "1 action",
+        "fr": "1 action"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hour",
+      "label": {
+        "fr": "24 heures",
+        "en": "24 hours"
+      }
+    },
+    "description": {
+      "en": "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as &quot;a man or woman dressed in the uniform of the town guard&quot; or &quot;a red-haired dwarf wearing a pointed hat.&quot; You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.<br>When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn&apos;t reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell.<br><strong><em>At Higher Levels</em></strong>. If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.<br>",
+      "fr": "Gr&#xE2;ce &#xE0; ce sort, vous employez un animal pour livrer un message. Choisissez une b&#xEA;te visible de taille TP, comme un &#xE9;cureuil, un geai bleu ou une chauve-souris. Vous pr&#xE9;cisez une destination, que vous avez pr&#xE9;alablement visit&#xE9;e, et un destinataire qui correspond &#xE0; une description sommaire, comme &#xAB; un homme ou une femme v&#xEA;tu d&apos;un uniforme de la garde civile &#xBB; ou &#xAB; un nain roux portant un chapeau pointu &#xBB;. Vous &#xE9;noncez aussi un message de 25 mots ou moins. La b&#xEA;te cibl&#xE9;e se d&#xE9;place pour la dur&#xE9;e du sort vers la destination d&#xE9;termin&#xE9;e, au rythme de 75 kilom&#xE8;tres par 24 heures pour un messager ail&#xE9; ou 37,5 kilom&#xE8;tres pour les autres animaux.<br>Lorsque le messager arrive, il livre son message &#xE0; la cr&#xE9;ature que vous avez d&#xE9;crit en imitant le son de votre voix. Le messager parlera uniquement &#xE0; la cr&#xE9;ature correspondant &#xE0; la description que vous avez fournie. Si le messager ne parvient pas &#xE0; sa destination avant la fin du sort, le message est perdu et la b&#xEA;te revient &#xE0; l&apos;endroit o&#xF9; le sort a &#xE9;t&#xE9; incant&#xE9;.<br><strong><em>Aux niveaux sup&#xE9;rieurs</em></strong>. Lorsque vous lancez ce sort en utilisant un emplacement de sort de niveau 3 ou sup&#xE9;rieur, la dur&#xE9;e du sort augmente de 48 heures pour chaque niveau d&apos;emplacement au-del&#xE0; du niveau 2.<br>"
+    },
+    "classes": [
+      {
+        "classId": "bard",
+        "sourceId": "srd"
+      },
+      {
+        "classId": "druid",
+        "sourceId": "srd"
+      },
+      {
+        "classId": "ranger",
+        "sourceId": "srd"
+      }
+    ],
+    "sourceId": "srd"
+  },
+  {
+    "id": "animal-shapes",
+    "name": {
+      "fr": "Formes animales",
+      "en": "Animal Shapes"
+    },
+    "level": 8,
+    "ritual": false,
+    "schoolId": "transmutation",
+    "range": {
+      "type": "ranged",
+      "distance": {
+        "meters": 9,
+        "feet": 30
+      }
+    },
+    "castingTime": {
+      "value": 1,
+      "unit": "action",
+      "label": {
+        "en": "1 action",
+        "fr": "1 action"
+      },
+      "concentration": false
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hour",
+      "label": {
+        "fr": "concentration, jusqu'à 24 heures",
+        "en": "Concentration, up to 24 hours"
+      }
+    },
+    "description": {
+      "en": "Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller beast with a challenge rating of 4 or lower. On subsequent turns, you can use your action to transform affected creatures into new forms.<br>The transformation lasts for the duration for each target, or until the target drops to 0 hit points or dies. You can choose a different form for each target. A target&apos;s game statistics are replaced by the statistics of the chosen beast, though the target retains its alignment and Intelligence, Wisdom, and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its normal form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn&apos;t reduce the creature&apos;s normal form to 0 hit points, it isn&apos;t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can&apos;t speak or cast spells.<br>The target&apos;s gear melds into the new form. The target can&apos;t activate, wield, or otherwise benefit from any of its equipment.<br>",
+      "fr": "Votre magie transforme les autres en b&#xEA;tes. Vous pouvez cibler toutes les cr&#xE9;atures consentantes que vous pouvez voir et &#xE0; port&#xE9;e. Vous transformez chacune de ces cr&#xE9;atures en une b&#xEA;te de taille G ou inf&#xE9;rieure avec un FP de 4 ou inf&#xE9;rieur. Aux tours suivants, vous pouvez utiliser votre action pour changer de nouveau la forme des cr&#xE9;atures transform&#xE9;es.<br>La transformation reste effective pour chacune des cibles tant que le sort dure ou jusqu&apos;&#xE0; ce que la cible tombe &#xE0; 0 point de vie ou qu&apos;elle meure.<br>Les statistiques d&apos;une cible sont remplac&#xE9;es par les statistiques de la b&#xEA;te choisie. Cependant la cible conserve son alignement, ainsi que ses valeurs de caract&#xE9;ristique d&apos;Intelligence, de Sagesse et de Charisme. La cible acquiert les points de vie de sa nouvelle forme et lorsqu&apos;elle retrouve sa forme d&apos;origine, elle retourne au nombre de points de vie qu&apos;elle avait d&apos;&#xEA;tre m&#xE9;tamorphos&#xE9;e. Si la cible retrouve sa forme d&apos;origine parce qu&apos;elle est tomb&#xE9;e &#xE0; 0 point de vie, les d&#xE9;g&#xE2;ts restants sont appliqu&#xE9;s &#xE0; sa forme normale. Tant que les d&#xE9;g&#xE2;ts restants ne font pas tomber la forme normale de la cible &#xE0; 0 point de vie, elle ne tombe pas inconsciente. La cr&#xE9;ature est limit&#xE9;e aux actions qu&apos;elle peut effectuer sous sa nouvelle forme et ne peut ni parler ni lancer des sorts.<br>L&apos;&#xE9;quipement de la cible fusionne avec sa nouvelle forme. La cible ne peut pas activer, manipuler, ou b&#xE9;n&#xE9;ficier de quelque mani&#xE8;re que ce soit de son &#xE9;quipement.<br>"
+    },
+    "classes": [
+      {
+        "classId": "druid",
+        "sourceId": "srd"
+      }
+    ],
+    "sourceId": "srd"
+  }
+]

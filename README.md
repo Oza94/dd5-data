@@ -60,7 +60,7 @@ Output objects should respect a few rules.
 }
 ```
 
-- Objets must include a `source` attribute (see sources.json)
+- Objets must include a `source` attribute (see `json/sources.json`)
 
 ### Collections
 

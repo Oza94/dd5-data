@@ -26,6 +26,26 @@ export type Weight = {
   lb: number;
 };
 
+export type Distance = {
+  // Since feet & miles do not easily convert to each other these are optional and stored separatly
+  feet?: number;
+  miles?: number;
+  meters: number;
+};
+
+export type Range = {
+  type: string;
+  distance?: Distance;
+};
+
+export type Duration = {
+  unit: string;
+  value: number;
+  label: LocaleAttribute;
+};
+
+export type SpellComponent = "V" | "S" | "M";
+
 // modal types
 
 export interface Model {
@@ -39,4 +59,21 @@ export type Weapon = {
   damage?: Damage;
   weight: Weight;
   source: string;
+};
+
+export type Spell = {
+  id: string;
+  name: LocaleAttribute;
+  level: number;
+  schoolId: string;
+  ritual: boolean;
+  range: Range;
+  castingTime: Duration & {
+    condition?: LocaleAttribute;
+    concentration: boolean;
+  };
+  duration: Duration;
+  description: LocaleAttribute;
+  classes: { classId: string; sourceId: string }[];
+  sourceId: string;
 };
