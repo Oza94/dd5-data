@@ -1,4 +1,5 @@
 import { Spell } from "../../types";
+import logger from "../../utils/logger";
 import { scrape } from "../../utils/scrapeIt";
 import {
   ADDListSpellScrap,
@@ -6,7 +7,8 @@ import {
   ADDSpellCardScrapFR,
 } from "./types";
 import {
-  parseDistance,
+  isNoUnitDuration,
+  mergeShapes,
   parseDuration,
   parseRange,
   parseSchool,
@@ -59,17 +61,37 @@ export async function scrapSpellCard(url: string) {
 
   const { level, school, ritual } = parseSchool(data_en.school);
   const castingTime_en = parseDuration(
-    data_en.castingTime.replace("Casting Time: ", "")
+    data_en.castingTime
+      .replace("Casting Time: ", "")
+      .split(/ o[ur] /)[0]
+      .trim()
   );
   const castingTime_fr = parseDuration(
-    data_fr.castingTime.replace("Temps d'incantation : ", "")
+    data_fr.castingTime
+      .replace("Temps d'incantation : ", "")
+      .split(/ o[ur] /)[0]
+      .trim()
   );
 
-  const duration_en = parseDuration(data_en.duration.replace("Duration: ", ""));
-  const duration_fr = parseDuration(data_fr.duration.replace("Durée : ", ""));
+  const duration_en = parseDuration(
+    data_en.duration
+      .replace("Duration: ", "")
+      .split(/ o[ur] /)[0]
+      .trim()
+  );
+  const duration_fr = parseDuration(
+    data_fr.duration
+      .replace("Durée : ", "")
+      .split(/ o[ur] /)[0]
+      .trim()
+  );
 
-  const range_en = parseRange(data_en.range.replace("Range: ", ""));
-  const range_fr = parseRange(data_fr.range.replace("Portée : ", ""));
+  const { range: range_en, aoe: aoe_en } = parseRange(
+    data_en.range.replace("Range: ", "")
+  );
+  const { range: range_fr, aoe: aoe_fr } = parseRange(
+    data_fr.range.replace("Portée : ", "")
+  );
 
   return {
     id,
@@ -91,8 +113,11 @@ export async function scrapSpellCard(url: string) {
             }
           : undefined,
     },
+    aoe: aoe_en && aoe_fr ? mergeShapes(aoe_en, aoe_fr) : undefined,
     castingTime: {
-      value: castingTime_en.value,
+      value: isNoUnitDuration(castingTime_en.unit)
+        ? undefined
+        : castingTime_en.value,
       unit: castingTime_en.unit,
       label: {
         en: castingTime_en.label,
@@ -104,7 +129,7 @@ export async function scrapSpellCard(url: string) {
             fr: castingTime_fr.condition as string,
           }
         : undefined,
-      concentration: castingTime_en.concentration,
+      concentration: duration_en.concentration,
     },
     duration: {
       value: duration_en.value,
@@ -139,12 +164,13 @@ export async function aideddScrapSpells(): Promise<Spell[]> {
     }
   );
 
-  const spellsList = data.spells.slice(0, 10);
+  const spellsList = data.spells;
   const spells: Spell[] = [];
 
   for (let i = 0; i < spellsList.length; i++) {
     const { url } = spellsList[i];
 
+    logger.info(`at index ${i}`);
     spells.push(await scrapSpellCard(url));
   }
 
